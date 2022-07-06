@@ -15,7 +15,6 @@ hideNav.onclick = function () {
 }
 
 // 2 function bên dưới là do github copilot làm, e chỉ thêm nó vào để cái navbar thêm hợp lý xíu :((
-// reponsive e chỉ mới làm được trên 740px nhìn nó không bị loạn thôi còn bên mobile thì chưa :((
 
 //create a function to hide the navbar when resize the window
 window.onresize = function () {
