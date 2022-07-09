@@ -6,7 +6,7 @@ let dropdown_button2 = document.getElementById("dropdown_button2");
 let dropmenu = document.getElementById("dropmenu");
 let dropmenu2 = document.getElementById("dropmenu2");
 let i = 0;
-
+let j = 0;
 
 showNav.onclick = function () {
     mobile_nav.style.transform = "translateX(-100%)";
@@ -31,13 +31,13 @@ dropdown_button.onclick = function () {
 }
 
 dropdown_button2.onclick = function () {
-    if (i % 2 == 0) {
+    if (j % 2 == 0) {
         dropmenu2.style.display = "block";
-        i++;
+        j++;
     }
     else {
         dropmenu2.style.display = "none";
-        i++;
+        j++;
     }
 }
 
