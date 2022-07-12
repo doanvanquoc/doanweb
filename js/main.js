@@ -6,7 +6,7 @@ let dropdown_button2 = document.getElementById("dropdown_button2");
 let dropmenu = document.getElementById("dropmenu");
 let dropmenu2 = document.getElementById("dropmenu2");
 let i = 0;
-let j = 0;
+let j =0;
 
 showNav.onclick = function () {
     mobile_nav.style.transform = "translateX(-100%)";
@@ -20,38 +20,27 @@ hideNav.onclick = function () {
 }
 
 dropdown_button.onclick = function () {
-    if (i % 2 == 0) {
-        dropmenu.style.display = "block";
-        i++;
-    }
-    else {
-        dropmenu.style.display = "none";
-        i++;
-    }
+    i % 2 == 0 ? dropmenu.style.display="block" : dropmenu.style.display="none";
+    i++;
 }
 
 dropdown_button2.onclick = function () {
-    if (j % 2 == 0) {
-        dropmenu2.style.display = "block";
-        j++;
-    }
-    else {
-        dropmenu2.style.display = "none";
-        j++;
-    }
+    j % 2 == 0 ? dropmenu2.style.display="block" : dropmenu2.style.display="none";
+    j++;
 }
 
-// 2 function bên dưới là do github copilot làm, e chỉ thêm nó vào để cái navbar thêm hợp lý xíu :((
+// 2 function bên dưới là của github copilot làm, e chỉ thêm nó vào để cái navbar thêm hợp lý xíu :((
 
-//create a function to hide the navbar when resize the window
+
 window.onresize = function () {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 0) {
         mobile_nav.style.transform = "translateX(100%)";
         mobile_nav.style.transition = "transform 0.3s linear";
     }
 }
 
-// //create a function to hide the navbar when scroll the page
+
+//create a function to hide the navbar when scroll the page
 window.onscroll = function () {
     if (window.scrollY > 100) {
         mobile_nav.style.transform = "translateX(100%)";
