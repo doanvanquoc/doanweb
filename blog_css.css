@@ -141,6 +141,7 @@ h2 {
     position: absolute;
     bottom: -2px;
     right: 10px;
+    text-decoration: none;
 }
 
 .Nut:hover {
