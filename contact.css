@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/bg-home.jpg) no-repeat;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: inline;
+
+}
+
+header {
+    height: 60px;
+    width: auto;
+    background: url(img/bg-transparent1.png) repeat;
+
+}
+
+#header {
+    height: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 0;
+}
+
+
+#header .nav li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+#header .nav a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header .nav .active {
+    background: #000 !important;
+    color: #a3a3a3 !important;
+}
+
+#header .nav .menu {
+    position: relative;
+}
+
+#header .subnav {
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    right: 11px;
+    padding: 0;
+
+}
+
+#header .subnav {
+    display: none;
+    background-color: #620031;
+}
+
+#header .subnav2 {
+    right: -38px;
+    width: 10rem;
+}
+
+#header .nav li:hover {
+    background-color: #620031;
+}
+
+#header .menu:hover .subnav {
+    display: block;
+}
+
+#main {
+    background-color: #000;
+    height: 600px;
+    padding-top: 50px;
+}
+
+#send {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    position: absolute;
+    bottom: -35px;
+    left: 59%;
+}
+
+#send:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact form input {
+    padding: 10px;
+    width: 30%;
+    margin: 15px;
+}
+
+textarea {
+    width: 30%;
+    padding: 10px;
+    margin: 15px;
+}
+
+h2 {
+    color: #a3a3a3;
+    text-transform: uppercase;
+}
+
+#follow {
+    width: auto;
+    background-color: #a3a3a3;
+    height: 84px;
+}
+
+#follow>div {
+    height: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#follow h1 {
+    color: #fff;
+}
+
+#follow ul {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+}
+
+#follow img {
+    display: block;
+    margin-right: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+
+#follow a:hover {
+    opacity: 0.3;
+}
+
+#contact {
+    height: 100px;
+    background-color: #fff;
+}
+
+#contact p {
+    max-width: 940px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 90px;
+    font-size: 0.8rem;
+    color: black;
+}
